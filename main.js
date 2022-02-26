@@ -5,6 +5,7 @@ button1.addEventListener(`click`, color)
 function color() {
     this.style.backgroundColor = `blue`
 }
+console.log(`js works and is referenced`)
 
 let div1 = document.createElement(`div`)
 div1.style.width = `30px`

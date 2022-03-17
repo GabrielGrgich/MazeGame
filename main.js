@@ -9,3 +9,4 @@ div1.style.border = `2px solid blue`
 div1.style.backgroundColor = `yellow`
 div1.style.borderRadius = `50%`
 // Anything above can be scrapped
+// test

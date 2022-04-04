@@ -20,15 +20,17 @@ let sections = {
 // loops through the sections and generates a wall for every wall listed in the section
 for (let section in sections) {
     for (let wall in sections[section]) {
+        let name = wall
         wall = sections[section][wall]
-        generateWall(wall.width, wall.height, wall.top, wall.left)
+        generateWall(wall.width, wall.height, wall.top, wall.left, name)
     }
 }
 
 // generates the walls
-function generateWall(width, height, top, left) {
+function generateWall(width, height, top, left, id) {
     let newWall = document.createElement(`div`)
     parentDiv.appendChild(newWall)
+    newWall.id = `${id}`
     newWall.style.position = `absolute`
     newWall.style.backgroundColor = `grey`
     newWall.style.width = `${width}px`
